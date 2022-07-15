@@ -5,6 +5,11 @@
 2. Copier le contenu dans le répertoire www de wamp. (ajuster cette étape en fonction de l'OS utilisé)
 3. Installer localement Composer à la racine du projet.
 4. Installer Twig dans le projet avec la commande suivante: composer require "twig/twig:^2.0".
+5. À la racine du projet, ajouter un fichier .htaccess avec le contenu suivant: <br>
+`RewriteEngine On`<br>
+`RewriteCond %{REQUEST_FILENAME} !-d`<br>
+`RewriteCond %{REQUEST_FILENAME} !-f`<br>
+`RewriteRule ^(.*)$ index.php?url=$1 [L]`
 5. Importer la base de données sous le nom de tp2-boatsharing sur PHPMyAdmin ou l'outil préféré.
 6. Tout devrait être bon!
 
