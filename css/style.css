@@ -1,0 +1,180 @@
+/**
+* Purify
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: color ease 0.3s;
+}
+
+a:hover {
+    color: #59546C;
+}
+
+form {
+    margin-block-end: 0px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    padding: 4em 0;
+}
+
+.wrapper {
+    padding: 0 10vw;
+}
+
+
+header {
+    background-color: #0E131F;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__nav {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.header__logo {
+    margin-right: auto;
+}
+
+.header__logo a{
+    color: white;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+form label {
+    display: inline-block;
+    width: 80px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-image: url("../img/sailing.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.hero__title-wrapper {
+    background-color: #0e131f9f;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    padding: 0 10em;
+}
+
+.header__menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+.header__menu ul a{
+    color: white;
+}
+
+.header__menu ul a:hover,
+.header__logo a:hover {
+    color: #59546C;
+}
+
+section, table {
+    margin-top: 2em;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table thead tr {
+    background-color: #0E131F;
+    color: #ffffff;
+    text-align: left;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #0E131F;
+}
+
+table tbody tr:hover {
+    text-shadow: -0.06ex 0 currentColor, 0.06ex 0 currentColor;
+}
+
+form.reservation-form label {
+    width: 200px;
+}
+
+
+span.error{
+    color: red;
+}
