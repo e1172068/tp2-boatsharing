@@ -79,7 +79,6 @@
         public function delete($id) {
             $member = new ModelMember;
             $delete = $member->delete($id);
-            var_dump($delete);
             RequirePage::redirect("member/list");
         } 
     }
